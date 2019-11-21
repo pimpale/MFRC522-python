@@ -1,3 +1,8 @@
+# Added Ultralight Support in this fork
+Supports NTAG213, NTAG214, NTAG215, NTAG216, and other Ultralight RFIDs
+
+Reading is the same as normal `MFRC522_Read`, but to write use the `MFRC_WriteUltralight`, with a 4 byte long data. This will write to one page. You don't need to authenticate when writing. Runs only with python3, make sure to use it. 
+
 MFRC522-python
 ==============
 A small class to interface with the NFC reader Module MFRC522 on the Raspberry Pi.
